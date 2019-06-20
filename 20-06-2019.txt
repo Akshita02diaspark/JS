@@ -1,0 +1,5 @@
+java scipt assignment 2
+20-06-2019
+
+ que 1- https://jsfiddle.net/p50dmhf4/
+ que 2 - https://jsfiddle.net/p50dmhf4/1/
