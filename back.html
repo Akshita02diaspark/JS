@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+#div1{
+
+border: 2px red solid;
+height: 200px;
+width: 200px;
+background-repeat: no-repeat;
+background-size: cover;
+
+}
+
+</style>
+<script>
+        function myFunction() {
+        
+         // document.body.style.backgroundColor = "#f3f3f3";
+        
+         let url= document.getElementById("txt1").value;
+         console.log(url);
+         let divbox= document.getElementById("div1");
+          divbox.style.backgroundImage = "url('"+url+"')";
+        }
+        </script>
+
+  </head>
+<body>
+
+<input type="text" id="txt1">
+<button type="button" id="btnid" onclick="myFunction()">Set background image</button>
+<div id="div1"></div>
+
+
+
+
+
+</body>
+</html>

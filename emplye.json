@@ -1,0 +1,16 @@
+{
+"data":
+[
+{"id":"1","name":"Angel Lewis","class":"Four5",
+"mark":"75","sex":"male"},
+
+{"id":"2","name":"Max Ruin","class":"Three5",
+"mark":"85","sex":"male"},
+
+{"id":"3","name":"Arnold","class":"Three5",
+"mark":"55","sex":"male"},
+
+{"id":"4","name":"Krish Star","class":"Four5",
+"mark":"60","sex":"male"}
+]
+}

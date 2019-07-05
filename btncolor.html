@@ -1,0 +1,44 @@
+<HTMl>
+    <head>
+
+<script>
+
+function myfunc()
+{
+
+    //var x =document.getElementById("txt1").style.backgroundColor =txt1.value;
+    document.getElementById("div1").style.backgroundColor =txt1.value;
+    //div1.style.backgroundcolor=txt1.value;
+   // console.log(x);
+    }
+
+    function myfunc2()
+{
+
+document.getElementById("div2").style.backgroundColor=txt1.value;
+
+}
+</script>
+
+<style>
+#div1,#div2{
+
+border: 2px red solid;
+height: 100px;
+width: 100px;
+
+
+}
+
+</style>
+    </head>
+    <body>
+
+<input type="text" id="txt1">
+<input type="button" value="Click me" onclick="myfunc()">
+<div id="div1" onclick="myfunc2()"></div>
+<div id="div2"></div>
+
+
+    </body>
+</HTML>
