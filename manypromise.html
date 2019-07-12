@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <script src="jquery.js"> </script>
+        <script>
+           let CleanRoom = function(){
+               return new Promise(function(resolve,reject){
+
+                   resolve('clean the room');
+               });
+           }
+
+           let RemoveGarbage = function(){
+
+               return new Promise(function(resolve,reject){
+                  resolve('remove the garbage');
+               });
+           }
+
+          let WinIcecream = function(){
+              return new Promise(function(resolve,reject){
+                  resolve( 'win the icecream');
+
+              });
+
+
+          }
+          CleanRoom().then(function(result){
+              alert(result);
+              return RemoveGarbage();
+
+          }).then(function(result){
+              alert(result);
+              return WinIcecream();
+          }).then(function(result){
+              alert(result);
+
+          });  
+
+        /*  Promise.all([CleanRoom(true),RemoveGarbage(true),WinIcecream(true)]).then(function(msg){
+              alert(msg);
+
+          }).catch(function(){
+                      alert("ERROR!!!!!!!!!!!!!!")
+          });   
+*/
+        
+        </script>
+
+    </head>
+    <body>
+        
+
+    </body>
+</html>

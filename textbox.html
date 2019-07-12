@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#rd1").click(function(){
+  $("button").click(function(){
+
+    $(".txt1,.txt2,.txt3").css("background-color", "red");
+    
+   // $("#div3").fadeIn();
+   $('.txt3').val('').hide().fadeIn('slow');
+   
+
+  });
+});
+});
+$(document).ready(function(){
+$("#rd2").click(function(){
+  $("button").click(function(){
+
+    $(".txt2,.txt3").css("background-color", "blue");
+   
+      $("input.txt1").hide();
+    
+});
+  });
+});
+$("input.txt1").show();
+  $(document).ready(function(){
+  $("#rd3").click(function(){
+  $("button").click(function(){
+
+    $(".txt2,.txt3,.txt1").css("background-color", "green");
+   
+      
+  $("button").slideToggle();
+    
+});
+  });
+
+  
+});
+
+</script>
+</head>
+<body>
+<input type="radio" id="rd1" name="grp">red
+<input type="radio" id="rd2" name="grp">blue
+<input type="radio" id="rd3" name="grp">green
+<input type="text" class="txt1">
+<input type="text" class="txt1">
+<input type="text" class="txt2">
+<input type="text" class="txt3" >
+<button>Set the color property of all p elements</button>
+</body>
+</html>
